@@ -64,7 +64,7 @@ jobs:
       id: use-task-cache
       with: 
         path: |
-          /home/runner/.AutoSignMachine
+          /home/runner/.AutoSignMachine ----tryrun
         key: ${{ runner.os }}-task-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install dependencies
